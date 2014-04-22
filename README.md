@@ -1,9 +1,8 @@
 HM-10 Breakout Board
 ====================
 
-<img src="top.png" width="400px" title="Top" />
-<br />
-<img src="bottom.png" width="400px" title="Bottom" />
+<img src="top.png" width="200px" title="Top" />
+<img src="bottom.png" width="200px" title="Bottom" />
 
 This is a slight modification of [Ladvien's board](https://github.com/Ladvien/HM-10). It provides breadboard-pitch access to the HM-10 BLE module. 
 The HM-10's on board TI CC2540 is fully programmable with CC-Debugger or SmartRF04EB.
@@ -45,10 +44,11 @@ On-going HM-10 research: http://letsmakerobots.com/node/38009
 
 Info about the HM-10 module: http://www.jnhuamao.cn/
 
-HM-10 Datasheet:  http://www.jnhuamao.cn/bluetooth40_en.rar
+HM-10 datasheet:  http://www.jnhuamao.cn/bluetooth40_en.rar
 
 Info about the CC2540: http://www.ti.com/product/cc2540&DCMP=LowPowerRFICs+Other&HQS=Other+OT+cc2540
+CC2540 datasheet: http://www.ti.com/lit/ds/symlink/cc2540.pdf
 
-The Coin BLE Dev Kit Wiki has a little bit of everything: https://github.com/CoinApps/arduino-ble-dev-kit/wiki/_pages
+The Coin BLE Dev Kit wiki has a little bit of everything: https://github.com/CoinApps/arduino-ble-dev-kit/wiki/_pages
 
 If all you want is a UART serial connection from a HM-10, buy this baseboard: http://www.fasttech.com/products/1129102
