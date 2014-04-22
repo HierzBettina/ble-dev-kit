@@ -36,19 +36,26 @@ Reference the schematic if you are uncertain where a specific component is requi
 
 ##Links
 
-This repo's wiki page is a good resource for information on using the HM-10 as a BLE development platform: https://github.com/nickswalker/HM-10-breakout-board/wiki
+[This repo's wiki](https://github.com/nickswalker/HM-10-breakout-board/wiki) is a good resource for information on using the HM-10 as a BLE development platform.
 
 Assembly: http://www.instructables.com/id/How-to-Create-an-Arduino-Compatible-Bluetooth-40-M/
 
 On-going HM-10 research: http://letsmakerobots.com/node/38009
 
-Info about the HM-10 module: http://www.jnhuamao.cn/
+###Other HM-10/CC254x Based Projects
+####Coin BLE Dev Kit
+Arduino Pro Mini with a bare CC2540 to provide serial over BLE. Their [wiki](https://github.com/CoinApps/arduino-ble-dev-kit/wiki/_pages) is full of useful information.
+####OS CC2450
+Project to create open software platform on-top of CC's proprietary stuff. The dev blog includes some useful photos and even some [schematics](http://blog.p-dev.net/?p=93).
+####JY MCU
+If all you want is a UART serial connection from a HM-10, [buy this baseboard](http://www.fasttech.com/products/1129102).
+
+###Technical Information
+
+HM-10 manufacturer's site: http://www.jnhuamao.cn/
 
 HM-10 datasheet:  http://www.jnhuamao.cn/bluetooth40_en.rar
 
-Info about the CC2540: http://www.ti.com/product/cc2540&DCMP=LowPowerRFICs+Other&HQS=Other+OT+cc2540
+CC2540 website: http://www.ti.com/product/cc2540&DCMP=LowPowerRFICs+Other&HQS=Other+OT+cc2540
+
 CC2540 datasheet: http://www.ti.com/lit/ds/symlink/cc2540.pdf
-
-The Coin BLE Dev Kit wiki has a little bit of everything: https://github.com/CoinApps/arduino-ble-dev-kit/wiki/_pages
-
-If all you want is a UART serial connection from a HM-10, buy this baseboard: http://www.fasttech.com/products/1129102
