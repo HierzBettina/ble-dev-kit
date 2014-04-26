@@ -1,9 +1,8 @@
 HM-10 Breakout Board
 ====================
 
-<img src="images/top.png" width="400px" title="Top" />
-<br />
-<img src="images/bottom.png" width="400px" title="Bottom" />
+<img src="images/top.png" width="200px" title="Top" />
+<img src="images/bottom.png" width="200px" title="Bottom" />
 
 This is a slight modification of [Ladvien's board](https://github.com/Ladvien/HM-10). It makes the HM-10 BLE module breadboard friendly. 
 The HM-10's on board TI CC2540 is fully programmable with CC-Debugger or SmartRF04EB.
