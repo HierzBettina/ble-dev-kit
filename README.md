@@ -1,16 +1,16 @@
 HM-10 Breakout Board
 ====================
 
-<img src="top.png" width="400px" title="Top" />
+<img src="images/top.png" width="400px" title="Top" />
 <br />
-<img src="bottom.png" width="400px" title="Bottom" />
+<img src="images/bottom.png" width="400px" title="Bottom" />
 
-This is a slight modification of [Ladvien's board](https://github.com/Ladvien/HM-10). It provides breadboard-pitch access to the HM-10 BLE module. 
+This is a slight modification of [Ladvien's board](https://github.com/Ladvien/HM-10). It makes the HM-10 BLE module breadboard friendly. 
 The HM-10's on board TI CC2540 is fully programmable with CC-Debugger or SmartRF04EB.
 
 ### Who is This Board For?
 
-Two groups of people: Those wanting to make the HM-10 breadboard-friendly and those wanting a cheaper, more flexible alternative to TI's CC2541 dev kits. All pins on the HM-10 are broken out, even those listed in the datasheet as having no connection.
+Two groups of people: Those wanting to make the HM-10 breadboard-friendly and those wanting a cheaper, more flexible alternative to TI's CC2541 dev kits.
 
 There is no space for a USB connector, however the D+ and D- minus pins are broken out and one can be added in the breadboard with little difficulty.
 
