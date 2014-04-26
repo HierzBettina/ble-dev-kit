@@ -1,9 +1,14 @@
 HM-10 Breakout Board
 ====================
 
+<<<<<<< HEAD
 <img src="images/top.png" width="400px" title="Top" />
 <br />
 <img src="images/bottom.png" width="400px" title="Bottom" />
+=======
+<img src="top.png" width="200px" title="Top" />
+<img src="bottom.png" width="200px" title="Bottom" />
+>>>>>>> FETCH_HEAD
 
 This is a slight modification of [Ladvien's board](https://github.com/Ladvien/HM-10). It makes the HM-10 BLE module breadboard friendly. 
 The HM-10's on board TI CC2540 is fully programmable with CC-Debugger or SmartRF04EB.
@@ -37,18 +42,26 @@ Reference the schematic if you are uncertain where a specific component is requi
 
 ##Links
 
-This repo's wiki page is a good resource for information on using the HM-10 as a BLE development platform: https://github.com/nickswalker/HM-10-breakout-board/wiki
+[This repo's wiki](https://github.com/nickswalker/HM-10-breakout-board/wiki) is a good resource for information on using the HM-10 as a BLE development platform.
 
 Assembly: http://www.instructables.com/id/How-to-Create-an-Arduino-Compatible-Bluetooth-40-M/
 
 On-going HM-10 research: http://letsmakerobots.com/node/38009
 
-Info about the HM-10 module: http://www.jnhuamao.cn/
+###Other HM-10/CC254x Based Projects
+####Coin BLE Dev Kit
+Arduino Pro Mini with a bare CC2540 to provide serial over BLE. Their [wiki](https://github.com/CoinApps/arduino-ble-dev-kit/wiki/_pages) is full of useful information.
+####OS CC2450
+Project to create open software platform on-top of CC's proprietary stuff. The dev blog includes some useful photos and even some [schematics](http://blog.p-dev.net/?p=93).
+####JY MCU
+If all you want is a UART serial connection from a HM-10, [buy this baseboard](http://www.fasttech.com/products/1129102).
 
-HM-10 Datasheet:  http://www.jnhuamao.cn/bluetooth40_en.rar
+###Technical Information
 
-Info about the CC2540: http://www.ti.com/product/cc2540&DCMP=LowPowerRFICs+Other&HQS=Other+OT+cc2540
+HM-10 manufacturer's site: http://www.jnhuamao.cn/
 
-The Coin BLE Dev Kit Wiki has a little bit of everything: https://github.com/CoinApps/arduino-ble-dev-kit/wiki/_pages
+HM-10 datasheet:  http://www.jnhuamao.cn/bluetooth40_en.rar
 
-If all you want is a UART serial connection from a HM-10, buy this baseboard: http://www.fasttech.com/products/1129102
+CC2540 website: http://www.ti.com/product/cc2540&DCMP=LowPowerRFICs+Other&HQS=Other+OT+cc2540
+
+CC2540 datasheet: http://www.ti.com/lit/ds/symlink/cc2540.pdf
