@@ -21,7 +21,7 @@ At a bare minimum, the PCB and the HM-10 module are required. You'll probably wa
 
 Part (Digi-Key #) | Quantity | Optional (Required For)
 :---------------- | :-------:| :----------------------
-[Breakout PCB](https://oshpark.com/shared_projects/mgt9vH1j)  | 1 | No
+[Breakout PCB](https://oshpark.com/shared_projects/u0PiRIvl)  | 1 | No
 [HM-10 Module](http://www.fasttech.com/products/0/10004051/1292002-ti-cc2540-bluetooth-40-ble-2540-transparent-serial) | 1 | No
 [0805 20kΩ Resistor](http://www.digikey.com/product-detail/en/RMCF0805JT20K0/RMCF0805JT20K0CT-ND/1942580) (RMCF0805JT20K0CT-ND) | 1 | Yes (UART level conversion)
 [0805 10kΩ Resistor](http://www.digikey.com/product-detail/en/RMCF0805FT10K0/RMCF0805FT10K0DKR-ND/1943341) (RMCF0805FT10K0CT-ND) | 3 | Yes (UART level conversion)
@@ -46,9 +46,9 @@ On-going HM-10 research: http://letsmakerobots.com/node/38009
 ####Coin BLE Dev Kit
 Arduino Pro Mini with a bare CC2540 to provide serial over BLE. Their [wiki](https://github.com/CoinApps/arduino-ble-dev-kit/wiki/_pages) is full of useful information.
 ####OS CC2450
-Project to create open software platform on-top of CC's proprietary stuff. The dev blog includes some useful photos and even some [schematics](http://blog.p-dev.net/?p=93).
+Project to create better firmware for the HM-10. The dev blog includes useful photos, ongoing research and even some [schematics](http://blog.p-dev.net/?p=93).
 ####JY MCU
-If all you want is a UART serial connection from a HM-10, [buy this baseboard](http://www.fasttech.com/products/1129102).
+If all you want is a UART serial connection from a HM-10, [buy this baseboard](http://www.fasttech.com/products/1129102). Do note that this is at 3 volts. If you need 5, you'll want to build the breakout yourself.
 
 ###Technical Information
 
