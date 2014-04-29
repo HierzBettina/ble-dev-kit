@@ -29,7 +29,7 @@ Part (Digi-Key #) | Quantity | Optional (Required For)
 [0603 LED (>3v drop)](http://www.digikey.com/product-detail/en/APT1608QBC%2FD/754-1434-1-ND/2163792) (754-1434-1-ND) | 2 | Yes (LEDs)
 [0805 470Ω Resistor](http://www.digikey.com/product-detail/en/RMCF0805JG470R/RMCF0805JG470RCT-ND/4425246) (RMCF0805JG470RCT-ND) | 3 | Yes (LEDs)
 [SOT-23 MCP1700 Voltage Regulator](http://www.digikey.com/product-detail/en/MCP1700T-3302E%2FTT/MCP1700T3302ETTCT-ND/652677) (MCP1700T3302ETTCT-ND) | 1 | Yes (voltage regulator)
-[0805 1uF Capacitor]() () | 1 | Yes (Voltage regulator)
+[0805 1uF Capacitor](http://www.digikey.com/product-detail/en/JMK105BJ105KV-F/587-1231-1-ND/931008) (587-1231-1-ND) | 1 | Yes (Voltage regulator)
 
 Reference the schematic if you are uncertain where a specific component is required.
 
