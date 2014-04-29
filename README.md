@@ -25,7 +25,6 @@ Part (Digi-Key #) | Quantity | Optional (Required For)
 [HM-10 Module](http://www.fasttech.com/products/0/10004051/1292002-ti-cc2540-bluetooth-40-ble-2540-transparent-serial) | 1 | No
 [0805 20kΩ Resistor](http://www.digikey.com/product-detail/en/RMCF0805JT20K0/RMCF0805JT20K0CT-ND/1942580) (RMCF0805JT20K0CT-ND) | 1 | Yes (UART level conversion)
 [0805 10kΩ Resistor](http://www.digikey.com/product-detail/en/RMCF0805FT10K0/RMCF0805FT10K0DKR-ND/1943341) (RMCF0805FT10K0CT-ND) | 3 | Yes (UART level conversion)
-[CC Debugger Header](http://www.digikey.com/product-detail/en/20021121-00010C4LF/609-3695-1-ND/2209147) (609-3695-1-ND)  | 1 | Yes (CC Debug capability)
 [0603 LED](http://www.digikey.com/product-detail/en/LTST-C191KRKT/160-1447-1-ND/386836) (160-1447-1-ND) | 1 | Yes (LEDs)
 [0603 LED (>3v drop)](http://www.digikey.com/product-detail/en/APT1608QBC%2FD/754-1434-1-ND/2163792) (754-1434-1-ND) | 2 | Yes (LEDs)
 [0805 470Ω Resistor](http://www.digikey.com/product-detail/en/RMCF0805JG470R/RMCF0805JG470RCT-ND/4425246) (RMCF0805JG470RCT-ND) | 3 | Yes (LEDs)
