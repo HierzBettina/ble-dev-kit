@@ -44,11 +44,12 @@ On-going HM-10 research: http://letsmakerobots.com/node/38009
 ###Other HM-10/CC254x Based Projects
 ####Coin BLE Dev Kit
 Arduino Pro Mini with a bare CC2540 to provide serial over BLE. Their [wiki](https://github.com/CoinApps/arduino-ble-dev-kit/wiki/_pages) is full of useful information.
-####OS CC2450
+####[OS CC2450](http://blog.p-dev.net)
 Project to create better firmware for the HM-10. The dev blog includes useful photos, ongoing research and even some [schematics](http://blog.p-dev.net/?p=93).
 ####JY MCU
 If all you want is a UART serial connection from a HM-10, [buy this baseboard](http://www.fasttech.com/products/1129102). Do note that this is at 3 volts. If you need 5, you'll want to build the breakout yourself.
-
+####Biscuit
+[Open source](https://github.com/RedBearLab/Biscuit) firmware for the CC2540. I haven't tested it with the HM-10 yet but it's interesting just to see the code.
 ###Technical Information
 
 HM-10 manufacturer's site: http://www.jnhuamao.cn/
