@@ -48,6 +48,8 @@ Project to create better firmware for the HM-10. The dev blog includes useful ph
 Buy this board, if all you want is a UART serial connection from a HM-10. Do note that this is at 3 volts. If you need 5, you'll want to build the breakout yourself.
 #### [Biscuit](https://github.com/RedBearLab/Biscuit)
 Open source firmware for the CC2540. I haven't tested it with the HM-10 yet but it's interesting just to see the code.
+#### [Radius Networks](http://developer.radiusnetworks.com/)
+Provider of Raspberry Pi based iBeacon devkits. They maintain an interesting [blog](http://developer.radiusnetworks.com/blog). [One](http://developer.radiusnetworks.com/2013/11/04/how-to-make-an-ibeacon-with-the-ti-cc2540.html) post details getting the CC2541 setup as an iBeacon.
 
 ### Technical Information
 
