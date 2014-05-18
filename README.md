@@ -39,7 +39,7 @@ Assembly: http://www.instructables.com/id/How-to-Create-an-Arduino-Compatible-Bl
 
 On-going HM-10 research: http://letsmakerobots.com/node/38009
 
-### Other HM-10/CC254x Based Projects
+### Related Projects
 #### [Coin BLE Dev Kit](https://github.com/CoinApps)
 Arduino Pro Mini with a bare CC2540 to provide serial over BLE. Their [wiki](https://github.com/CoinApps/arduino-ble-dev-kit/wiki/_pages) is full of useful information.
 #### [OS CC2450](http://blog.p-dev.net)
@@ -50,6 +50,8 @@ Buy this board, if all you want is a UART serial connection from a HM-10. Do not
 Open source firmware for the CC2540. I haven't tested it with the HM-10 yet but it's interesting just to see the code.
 #### [Radius Networks](http://developer.radiusnetworks.com/)
 Provider of Raspberry Pi based iBeacon devkits. They maintain an interesting [blog](http://developer.radiusnetworks.com/blog). [One](http://developer.radiusnetworks.com/2013/11/04/how-to-make-an-ibeacon-with-the-ti-cc2540.html) post details getting the CC2541 setup as an iBeacon.
+#### [BlueShield iOS Library](https://github.com/volca/BlueShieldFramework)
+Totatlly undocumented code to interface with a Chinese UART-over-BLE peripheral component (which you can find on eBay). The code seems to be based off of TI's example code, so it's a little out of date, but it should be a good place to start investigating.
 
 ### Technical Information
 
