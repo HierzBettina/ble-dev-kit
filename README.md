@@ -15,7 +15,7 @@ Two groups of people: Those wanting to make the HM-10 breadboard-friendly and th
 
 If you are planning on ordering the PCB through OSHPark, keep in mind that you will receive three copies. You may want to go ahead and order three times as many components. Digi-Key numbers are provided as a courtesy; check eBay or any other preferred supplier for better pricing. As long as the component matches the packaging a specifications, it should be fine.
 
-At a bare minimum, the PCB and the HM-10 module are required. You'll probably want to use the UART connection in your project, so you'll want to populate those components too.
+At a bare minimum, the PCB and the HM-10 module are required. You'll probably want to use the UART connection in your project, so you'll want to populate those components too. If not, simply bridge the solder jumper to bypass the regulator circuit.
 
 Part (Digi-Key #) | Quantity | Optional (Required For)
 :---------------- | :-------:| :----------------------
