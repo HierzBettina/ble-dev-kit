@@ -15,7 +15,7 @@ Two groups of people: Those wanting to make the HM-10 breadboard-friendly and th
 
 If you are planning on ordering the PCB through OSHPark, keep in mind that you will receive three copies. You may want to go ahead and order three times as many components. Digi-Key numbers are provided as a courtesy; check eBay or any other preferred supplier for better pricing. As long as the component matches the packaging a specifications, it should be fine.
 
-At a bare minimum, the PCB and the HM-10 module are required. You'll probably want to use the UART connection in your project, so you'll want to populate those components too. If not, simply bridge the solder jumper to bypass the regulator circuit.
+At a bare minimum, the PCB and the HM-10 module are required. If you want to use UART but only have the capability of providing 5v, you will want to populate the level conversion components. However, this is /grossly/ inefficient and defeats the purpose of using a low power connection technology. Bridge the solder jumper to bypass the regulator circuit. You may consider simply regulating off board for development, using a cheap level converter like [this one](http://www.ebay.com/itm/1PC-New-5V-3V-IIC-UART-Level-Converter-Module-Adapter-4-Way-For-Arduino-/251384699933?pt=LH_DefaultDomain_0&hash=item3a87b21c1d).
 
 Part (Digi-Key #) | Quantity | Optional (Required For)
 :---------------- | :-------:| :----------------------
