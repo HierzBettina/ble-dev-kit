@@ -14,38 +14,38 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="14" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
@@ -65,12 +65,15 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="no"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="no"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="no"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="no"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="no"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="no"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="no"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="no"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="no"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="no" active="no"/>
@@ -136,6 +139,9 @@
 <text x="14.55" y="8.85" size="0.6096" layer="25" rot="R90">Breakout Board</text>
 <text x="20.886" y="14.202" size="1.27" layer="26" font="vector" rot="MR0" align="center-left">DC</text>
 <text x="20.886" y="11.652" size="1.27" layer="26" font="vector" rot="MR0" align="center-left">DD</text>
+<text x="12" y="5.1" size="0.8128" layer="26" font="vector" rot="MR0" align="bottom-center">HM-10 Breakout</text>
+<text x="16.95" y="4.2" size="0.6096" layer="26" font="vector" rot="MR0">Nick Walker</text>
+<text x="7.05" y="4.2" size="0.6096" layer="26" font="vector" rot="MR0" align="bottom-right">v1.1</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -313,81 +319,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <text x="-0.908" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.908" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-</library>
-<library name="ohw-logo">
-<packages>
-<package name="OSHW_FILLX70_NOTEXT">
-<wire x1="0.8382" y1="0.508" x2="0.6858" y2="0.1016" width="0.1524" layer="21"/>
-<wire x1="0.6858" y1="0.1016" x2="0.5842" y2="0.1524" width="0.1524" layer="21"/>
-<wire x1="0.5842" y1="0.1524" x2="0.381" y2="0" width="0.1524" layer="21"/>
-<wire x1="0.381" y1="0" x2="0.2032" y2="0.1524" width="0.1524" layer="21"/>
-<wire x1="0.2032" y1="0.1524" x2="0.3556" y2="0.381" width="0.1524" layer="21"/>
-<wire x1="0.3556" y1="0.381" x2="0.254" y2="0.6096" width="0.1524" layer="21"/>
-<wire x1="0.254" y1="0.6096" x2="0" y2="0.6604" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.6604" x2="0" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.889" x2="0.2794" y2="0.9398" width="0.1524" layer="21"/>
-<wire x1="0.2794" y1="0.9398" x2="0.3556" y2="1.1684" width="0.1524" layer="21"/>
-<wire x1="0.3556" y1="1.1684" x2="0.2032" y2="1.397" width="0.1524" layer="21"/>
-<wire x1="0.2032" y1="1.397" x2="0.381" y2="1.5748" width="0.1524" layer="21"/>
-<wire x1="0.381" y1="1.5748" x2="0.6096" y2="1.397" width="0.1524" layer="21"/>
-<wire x1="0.6096" y1="1.397" x2="0.8128" y2="1.4986" width="0.1524" layer="21"/>
-<wire x1="0.8128" y1="1.4986" x2="0.889" y2="1.778" width="0.1524" layer="21"/>
-<wire x1="0.889" y1="1.778" x2="1.1176" y2="1.778" width="0.1524" layer="21"/>
-<wire x1="1.1176" y1="1.778" x2="1.1684" y2="1.4986" width="0.1524" layer="21"/>
-<wire x1="1.1684" y1="1.4986" x2="1.3716" y2="1.397" width="0.1524" layer="21"/>
-<wire x1="1.3716" y1="1.397" x2="1.6002" y2="1.5748" width="0.1524" layer="21"/>
-<wire x1="1.6002" y1="1.5748" x2="1.778" y2="1.397" width="0.1524" layer="21"/>
-<wire x1="1.778" y1="1.397" x2="1.6256" y2="1.1684" width="0.1524" layer="21"/>
-<wire x1="1.6256" y1="1.1684" x2="1.7272" y2="0.9398" width="0.1524" layer="21"/>
-<wire x1="1.7272" y1="0.9398" x2="1.9812" y2="0.889" width="0.1524" layer="21"/>
-<wire x1="1.9812" y1="0.889" x2="1.9812" y2="0.6604" width="0.1524" layer="21"/>
-<wire x1="1.9812" y1="0.6604" x2="1.7272" y2="0.6096" width="0.1524" layer="21"/>
-<wire x1="1.7272" y1="0.6096" x2="1.6256" y2="0.381" width="0.1524" layer="21"/>
-<wire x1="1.6256" y1="0.381" x2="1.778" y2="0.1524" width="0.1524" layer="21"/>
-<wire x1="1.778" y1="0.1524" x2="1.6002" y2="0" width="0.1524" layer="21"/>
-<wire x1="1.6002" y1="0" x2="1.397" y2="0.1524" width="0.1524" layer="21"/>
-<wire x1="1.397" y1="0.1524" x2="1.2954" y2="0.1016" width="0.1524" layer="21"/>
-<wire x1="1.2954" y1="0.1016" x2="1.143" y2="0.508" width="0.1524" layer="21"/>
-<wire x1="0.8382" y1="0.508" x2="1.143" y2="0.508" width="0.1524" layer="21" curve="-300.510237"/>
-<polygon width="0.1524" layer="21">
-<vertex x="0.635" y="0.2032"/>
-<vertex x="0.4064" y="0.0762"/>
-<vertex x="0.2794" y="0.1524"/>
-<vertex x="0.4318" y="0.4064"/>
-<vertex x="0.3048" y="0.6858"/>
-<vertex x="0.0508" y="0.7366"/>
-<vertex x="0.0508" y="0.8128"/>
-<vertex x="0.3048" y="0.9144"/>
-<vertex x="0.4064" y="1.1938"/>
-<vertex x="0.2794" y="1.4224"/>
-<vertex x="0.381" y="1.4986"/>
-<vertex x="0.5842" y="1.3462"/>
-<vertex x="0.8636" y="1.4986"/>
-<vertex x="0.9398" y="1.7272"/>
-<vertex x="1.0668" y="1.7272"/>
-<vertex x="1.143" y="1.4478"/>
-<vertex x="1.3716" y="1.3462"/>
-<vertex x="1.5748" y="1.4986"/>
-<vertex x="1.7018" y="1.397"/>
-<vertex x="1.5748" y="1.1938"/>
-<vertex x="1.7018" y="0.889"/>
-<vertex x="1.905" y="0.8382"/>
-<vertex x="1.9304" y="0.7112"/>
-<vertex x="1.7018" y="0.6604"/>
-<vertex x="1.5748" y="0.381"/>
-<vertex x="1.6764" y="0.1778"/>
-<vertex x="1.5748" y="0.1016"/>
-<vertex x="1.3462" y="0.2286"/>
-<vertex x="1.27" y="0.4826"/>
-<vertex x="1.4224" y="0.7366"/>
-<vertex x="1.3208" y="1.016"/>
-<vertex x="1.0414" y="1.1684"/>
-<vertex x="0.7112" y="1.0668"/>
-<vertex x="0.6096" y="0.7366"/>
-<vertex x="0.7112" y="0.4572"/>
-</polygon>
 </package>
 </packages>
 </library>
@@ -1552,6 +1483,91 @@ Metric Code Size 2012</description>
 </package>
 </packages>
 </library>
+<library name="SparkFun-Aesthetics">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find non-functional items- supply symbols, logos, notations, frame blocks, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="OSHW-LOGO-M">
+<polygon width="0.15" layer="21">
+<vertex x="0.6578" y="-1.588" curve="9.499253"/>
+<vertex x="0.9108" y="-1.4576"/>
+<vertex x="1.5392" y="-1.97"/>
+<vertex x="1.97" y="-1.5392"/>
+<vertex x="1.4576" y="-0.9108" curve="19.001165"/>
+<vertex x="1.6747" y="-0.3866"/>
+<vertex x="2.4814" y="-0.3047"/>
+<vertex x="2.4814" y="0.3047"/>
+<vertex x="1.6747" y="0.3866" curve="19.001165"/>
+<vertex x="1.4576" y="0.9108"/>
+<vertex x="1.97" y="1.5392"/>
+<vertex x="1.5392" y="1.97"/>
+<vertex x="0.9108" y="1.4576" curve="19.001165"/>
+<vertex x="0.3866" y="1.6747"/>
+<vertex x="0.3047" y="2.4814"/>
+<vertex x="-0.3047" y="2.4814"/>
+<vertex x="-0.3866" y="1.6747" curve="19.001165"/>
+<vertex x="-0.9108" y="1.4576"/>
+<vertex x="-1.5392" y="1.97"/>
+<vertex x="-1.97" y="1.5392"/>
+<vertex x="-1.4576" y="0.9108" curve="19.001165"/>
+<vertex x="-1.6747" y="0.3866"/>
+<vertex x="-2.4814" y="0.3047"/>
+<vertex x="-2.4814" y="-0.3047"/>
+<vertex x="-1.6747" y="-0.3866" curve="19.001165"/>
+<vertex x="-1.4576" y="-0.9108"/>
+<vertex x="-1.97" y="-1.5392"/>
+<vertex x="-1.5392" y="-1.97"/>
+<vertex x="-0.9108" y="-1.4576" curve="9.499253"/>
+<vertex x="-0.6578" y="-1.588"/>
+<vertex x="-0.299" y="-0.7218" curve="-67.507353"/>
+<vertex x="-0.7813" y="0" curve="-247.497552"/>
+<vertex x="0.299" y="-0.7218"/>
+</polygon>
+</package>
+<package name="OSHW-LOGO-S">
+<polygon width="0.15" layer="21">
+<vertex x="0.3947" y="-0.9528" curve="9.498218"/>
+<vertex x="0.5465" y="-0.8746"/>
+<vertex x="0.9235" y="-1.182"/>
+<vertex x="1.182" y="-0.9235"/>
+<vertex x="0.8746" y="-0.5465" curve="19.000773"/>
+<vertex x="1.0049" y="-0.232"/>
+<vertex x="1.4888" y="-0.1828"/>
+<vertex x="1.4888" y="0.1828"/>
+<vertex x="1.0049" y="0.232" curve="19.000773"/>
+<vertex x="0.8746" y="0.5465"/>
+<vertex x="1.182" y="0.9235"/>
+<vertex x="0.9235" y="1.182"/>
+<vertex x="0.5465" y="0.8746" curve="19.000773"/>
+<vertex x="0.232" y="1.0049"/>
+<vertex x="0.1828" y="1.4888"/>
+<vertex x="-0.1828" y="1.4888"/>
+<vertex x="-0.232" y="1.0049" curve="19.000773"/>
+<vertex x="-0.5465" y="0.8746"/>
+<vertex x="-0.9235" y="1.182"/>
+<vertex x="-1.182" y="0.9235"/>
+<vertex x="-0.8746" y="0.5465" curve="19.000773"/>
+<vertex x="-1.0049" y="0.232"/>
+<vertex x="-1.4888" y="0.1828"/>
+<vertex x="-1.4888" y="-0.1828"/>
+<vertex x="-1.0049" y="-0.232" curve="19.000773"/>
+<vertex x="-0.8746" y="-0.5465"/>
+<vertex x="-1.182" y="-0.9235"/>
+<vertex x="-0.9235" y="-1.182"/>
+<vertex x="-0.5465" y="-0.8746" curve="9.498218"/>
+<vertex x="-0.3947" y="-0.9528"/>
+<vertex x="-0.1794" y="-0.4331" curve="-67.514699"/>
+<vertex x="-0.4688" y="0" curve="-247.473915"/>
+<vertex x="0.1794" y="-0.4331"/>
+</polygon>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1736,7 +1752,6 @@ Please make sure your boards conform to these design rules.</description>
 <elements>
 <element name="JP1" library="SparkFun" package="1X13" value="M13" x="22.431878125" y="32.040603125" smashed="yes" rot="R270"/>
 <element name="JP2" library="SparkFun" package="1X13" value="M13" x="1.57744375" y="1.651" smashed="yes" rot="R90"/>
-<element name="U$3" library="ohw-logo" package="OSHW_FILLX70_NOTEXT" value="" x="11.122" y="30.276" smashed="yes"/>
 <element name="R3" library="resistor" package="M0805" value="10k" x="7.204653125" y="12.3662375" smashed="yes" rot="MR180"/>
 <element name="R4" library="resistor" package="M0805" value="20k" x="9.139490625" y="10.218765625" smashed="yes" rot="MR180"/>
 <element name="R5" library="resistor" package="M0805" value="10k" x="15.875903125" y="11.823396875" smashed="yes" rot="MR180"/>
@@ -1759,6 +1774,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="C1" library="resistor" package="C0805K" value="1uF" x="17.45" y="19.3" smashed="yes" rot="MR270"/>
 <element name="C2" library="resistor" package="C0805K" value="1uF" x="9.4347375" y="16.303146875" smashed="yes" rot="MR270"/>
 <element name="U2" library="HM-10_BLE" package="HM-10" value="HM-10" x="12" y="13.95" rot="R180"/>
+<element name="U$2" library="SparkFun-Aesthetics" package="OSHW-LOGO-M" value="" x="12" y="30.75" smashed="yes"/>
+<element name="U$1" library="SparkFun-Aesthetics" package="OSHW-LOGO-S" value="" x="12" y="1.95" smashed="yes" rot="MR0"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1867,13 +1884,13 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="8.1" y1="6.6" x2="7.05" y2="7.65" width="0.4064" layer="16"/>
 <wire x1="7.05" y1="7.65" x2="7.05" y2="10.820890625" width="0.4064" layer="16"/>
 <wire x1="7.05" y1="10.820890625" x2="6.254653125" y2="12.3662375" width="0.4064" layer="16"/>
-<wire x1="6.3" y1="19.05" x2="8.4" y2="21.15" width="0.4064" layer="16"/>
-<wire x1="8.4" y1="21.15" x2="8.4" y2="29.7" width="0.4064" layer="16"/>
-<wire x1="8.4" y1="29.7" x2="10.2" y2="31.5" width="0.4064" layer="16"/>
-<wire x1="6.3" y1="19.05" x2="6.3" y2="12.411584375" width="0.4064" layer="16"/>
+<wire x1="7.95" y1="29.25" x2="10.2" y2="31.5" width="0.4064" layer="16"/>
+<wire x1="6.3" y1="19.35" x2="6.3" y2="12.411584375" width="0.4064" layer="16"/>
 <wire x1="6.3" y1="12.411584375" x2="6.254653125" y2="12.3662375" width="0.4064" layer="16"/>
 <wire x1="10.2" y1="31.5" x2="11.6559875" y2="31.5" width="0.4064" layer="16"/>
 <wire x1="11.6559875" y1="31.5" x2="13.03315625" y2="30.12283125" width="0.4064" layer="16"/>
+<wire x1="6.3" y1="19.35" x2="7.95" y2="21" width="0.4064" layer="16"/>
+<wire x1="7.95" y1="21" x2="7.95" y2="29.25" width="0.4064" layer="16"/>
 </signal>
 <signal name="TX">
 <contactref element="JP1" pad="12"/>
@@ -1882,12 +1899,7 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="TX_LED" pad="C"/>
 <wire x1="20.85" y1="7.2" x2="20.85" y2="5.68248125" width="0.4064" layer="16"/>
 <wire x1="20.85" y1="5.68248125" x2="22.431878125" y2="4.100603125" width="0.4064" layer="16"/>
-<wire x1="9.6" y1="13.65" x2="7.95" y2="13.65" width="0.4064" layer="16"/>
-<wire x1="7.95" y1="13.65" x2="7.5" y2="14.1" width="0.4064" layer="16"/>
-<wire x1="7.5" y1="14.1" x2="7.5" y2="19.2" width="0.4064" layer="16"/>
-<wire x1="7.5" y1="19.2" x2="9.3" y2="21" width="0.4064" layer="16"/>
-<wire x1="9.6" y1="13.65" x2="11.25" y2="12" width="0.4064" layer="16"/>
-<wire x1="11.25" y1="12" x2="14.7493" y2="12" width="0.4064" layer="16"/>
+<wire x1="7.2" y1="18.9" x2="9.3" y2="21" width="0.4064" layer="16"/>
 <wire x1="14.7493" y1="12" x2="14.925903125" y2="11.823396875" width="0.4064" layer="16"/>
 <wire x1="14.925903125" y1="11.823396875" x2="14.925903125" y2="10.724096875" width="0.4064" layer="16"/>
 <wire x1="14.925903125" y1="10.724096875" x2="15.45" y2="10.2" width="0.4064" layer="16"/>
@@ -1895,6 +1907,11 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="17.85" y1="10.2" x2="20.85" y2="7.2" width="0.4064" layer="16"/>
 <wire x1="14.925903125" y1="11.823396875" x2="14.925903125" y2="12.902465625" width="0.4064" layer="16"/>
 <wire x1="14.925903125" y1="12.902465625" x2="15.761209375" y2="13.737771875" width="0.4064" layer="16"/>
+<wire x1="14.7493" y1="12" x2="11.1" y2="12" width="0.4064" layer="16"/>
+<wire x1="11.1" y1="12" x2="9.3" y2="13.8" width="0.4064" layer="16"/>
+<wire x1="9.3" y1="13.8" x2="7.8" y2="13.8" width="0.4064" layer="16"/>
+<wire x1="7.8" y1="13.8" x2="7.2" y2="14.4" width="0.4064" layer="16"/>
+<wire x1="7.2" y1="14.4" x2="7.2" y2="18.9" width="0.4064" layer="16"/>
 <wire x1="9.3" y1="21" x2="9.3" y2="28.872621875" width="0.4064" layer="16"/>
 <wire x1="9.3" y1="28.872621875" x2="10.531221875" y2="30.10384375" width="0.4064" layer="16"/>
 </signal>
