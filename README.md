@@ -33,32 +33,4 @@ The silkscreen doesn't include values, so be sure to have it open in front of yo
 
 ## Links
 
-[This repo's wiki](https://github.com/nickswalker/HM-10-breakout-board/wiki) is a good resource for information on using the HM-10 as a BLE development platform.
-
-Assembly: http://www.instructables.com/id/How-to-Create-an-Arduino-Compatible-Bluetooth-40-M/
-
-On-going HM-10 research: http://letsmakerobots.com/node/38009
-
-### Related Projects
-#### [Coin BLE Dev Kit](https://github.com/CoinApps)
-Arduino Pro Mini with a bare CC2540 to provide serial over BLE. Their [wiki](https://github.com/CoinApps/arduino-ble-dev-kit/wiki/_pages) is full of useful information.
-#### [OS CC2450](http://blog.p-dev.net)
-Project to create better firmware for the HM-10. The dev blog includes useful photos, ongoing research and even some [schematics](http://blog.p-dev.net/?p=93).
-#### [JY MCU](http://www.fasttech.com/products/1129102)
-Buy this board, if all you want is a UART serial connection from a HM-10. Do note that this is at 3 volts. If you need 5, you'll want to build the breakout yourself.
-#### [Biscuit](https://github.com/RedBearLab/Biscuit)
-Open source firmware for the CC2540. I haven't tested it with the HM-10 yet but it's interesting just to see the code.
-#### [Radius Networks](http://developer.radiusnetworks.com/)
-Provider of Raspberry Pi based iBeacon devkits. They maintain an interesting [blog](http://developer.radiusnetworks.com/blog). [One](http://developer.radiusnetworks.com/2013/11/04/how-to-make-an-ibeacon-with-the-ti-cc2540.html) post details getting the CC2541 setup as an iBeacon.
-#### [BlueShield iOS Library](https://github.com/volca/BlueShieldFramework)
-Totatlly undocumented code to interface with a Chinese UART-over-BLE peripheral component (which you can find on eBay). The code seems to be based off of TI's example code, so it's a little out of date, but it should be a good place to start investigating.
-
-### Technical Information
-
-HM-10 manufacturer's site: http://www.jnhuamao.cn/
-
-HM-10 datasheet:  http://www.jnhuamao.cn/bluetooth40_en.rar
-
-CC2541 website: http://www.ti.com/product/cc2541
-
-CC2541 datasheet: http://www.ti.com/lit/ds/symlink/cc2541.pdf
+[This repo's wiki](https://github.com/nickswalker/HM-10-breakout-board/wiki) is a good resource for information on using the HM-10 as a BLE development platform. Check out the [helpful links](https://github.com/nickswalker/HM-10-breakout-board/wiki/Helpful-Links) page for all sorts of related information and documentation.
