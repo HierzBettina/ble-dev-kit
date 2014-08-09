@@ -15,7 +15,7 @@ Two groups of people: Those wanting to make the HM-10 breadboard-friendly and th
 
 If you are planning on ordering the PCB through OSHPark, keep in mind that you will receive three copies. You may want to go ahead and order three times as many components. Digi-Key numbers are provided as a courtesy; check eBay or any other preferred supplier for better pricing. As long as the component matches the packaging a specifications, it should be fine.
 
-At a bare minimum, the PCB and the HM-10 module are required. You'll probably want to use the UART connection in your project, so you'll want to populate those components too.
+At a bare minimum, the PCB and the HM-10 module are required. If you want to use UART but only have the capability of providing 5v, you will want to populate the level conversion components. However, this is /grossly/ inefficient and defeats the purpose of using a low power connection technology. Bridge the solder jumper to bypass the regulator circuit. You may consider simply regulating off board for development, using a cheap level converter like [this one](http://www.ebay.com/itm/1PC-New-5V-3V-IIC-UART-Level-Converter-Module-Adapter-4-Way-For-Arduino-/251384699933?pt=LH_DefaultDomain_0&hash=item3a87b21c1d).
 
 Part (Digi-Key #) | Quantity | Optional (Required For)
 :---------------- | :-------:| :----------------------
@@ -33,32 +33,4 @@ The silkscreen doesn't include values, so be sure to have it open in front of yo
 
 ## Links
 
-[This repo's wiki](https://github.com/nickswalker/HM-10-breakout-board/wiki) is a good resource for information on using the HM-10 as a BLE development platform.
-
-Assembly: http://www.instructables.com/id/How-to-Create-an-Arduino-Compatible-Bluetooth-40-M/
-
-On-going HM-10 research: http://letsmakerobots.com/node/38009
-
-### Related Projects
-#### [Coin BLE Dev Kit](https://github.com/CoinApps)
-Arduino Pro Mini with a bare CC2540 to provide serial over BLE. Their [wiki](https://github.com/CoinApps/arduino-ble-dev-kit/wiki/_pages) is full of useful information.
-#### [OS CC2450](http://blog.p-dev.net)
-Project to create better firmware for the HM-10. The dev blog includes useful photos, ongoing research and even some [schematics](http://blog.p-dev.net/?p=93).
-#### [JY MCU](http://www.fasttech.com/products/1129102)
-Buy this board, if all you want is a UART serial connection from a HM-10. Do note that this is at 3 volts. If you need 5, you'll want to build the breakout yourself.
-#### [Biscuit](https://github.com/RedBearLab/Biscuit)
-Open source firmware for the CC2540. I haven't tested it with the HM-10 yet but it's interesting just to see the code.
-#### [Radius Networks](http://developer.radiusnetworks.com/)
-Provider of Raspberry Pi based iBeacon devkits. They maintain an interesting [blog](http://developer.radiusnetworks.com/blog). [One](http://developer.radiusnetworks.com/2013/11/04/how-to-make-an-ibeacon-with-the-ti-cc2540.html) post details getting the CC2541 setup as an iBeacon.
-#### [BlueShield iOS Library](https://github.com/volca/BlueShieldFramework)
-Totatlly undocumented code to interface with a Chinese UART-over-BLE peripheral component (which you can find on eBay). The code seems to be based off of TI's example code, so it's a little out of date, but it should be a good place to start investigating.
-
-### Technical Information
-
-HM-10 manufacturer's site: http://www.jnhuamao.cn/
-
-HM-10 datasheet:  http://www.jnhuamao.cn/bluetooth40_en.rar
-
-CC2541 website: http://www.ti.com/product/cc2541
-
-CC2541 datasheet: http://www.ti.com/lit/ds/symlink/cc2541.pdf
+[This repo's wiki](https://github.com/nickswalker/HM-10-breakout-board/wiki) is a good resource for information on using the HM-10 as a BLE development platform. Check out the [helpful links](https://github.com/nickswalker/HM-10-breakout-board/wiki/Helpful-Links) page for all sorts of related information and documentation.
