@@ -19,7 +19,7 @@ At a bare minimum, the PCB and the HM-10 module are required. You'll probably wa
 
 Part (Digi-Key #) | Quantity | Optional (Required For)
 :---------------- | :-------:| :----------------------
-[Breakout PCB](https://oshpark.com/shared_projects/u0PiRIvl)  | 1 | No
+[Breakout PCB](https://oshpark.com/shared_projects/A6hoH6Fi)  | 1 | No
 [HM-10 Module](http://www.fasttech.com/products/0/10004051/1292002-ti-cc2540-bluetooth-40-ble-2540-transparent-serial) | 1 | No
 [0805 20kΩ Resistor](http://www.digikey.com/product-detail/en/RMCF0805JT20K0/RMCF0805JT20K0CT-ND/1942580) (RMCF0805JT20K0CT-ND) | 1 | Yes (UART level conversion)
 [0805 10kΩ Resistor](http://www.digikey.com/product-detail/en/RMCF0805FT10K0/RMCF0805FT10K0DKR-ND/1943341) (RMCF0805FT10K0CT-ND) | 3 | Yes (UART level conversion)
