@@ -7,19 +7,13 @@ extern "C"
 #endif
 
 // Profile Parameters
-#define BLINKYPROFILE_CHAR1                   0  // RW uint8 - Profile Characteristic 1 value 
-#define BLINKYPROFILE_CHAR2                   1  // RW uint8 - Profile Characteristic 2 value
-#define BLINKYPROFILE_CHAR3                   2  // RW uint8 - Profile Characteristic 3 value
-#define BLINKYPROFILE_CHAR4                   3  // RW uint8 - Profile Characteristic 4 value
+#define BLINKYPROFILE_ON                   0  // RW uint8 - Profile Characteristic 1 value 
   
 // Simple Profile Service UUID
 #define BLINKYPROFILE_SERV_UUID               0xFFE0
     
 // Key Pressed UUID
-#define BLINKYPROFILE_CHAR1_UUID            0xFFF1
-#define BLINKYPROFILE_CHAR2_UUID            0xFFF2
-#define BLINKYPROFILE_CHAR3_UUID            0xFFF3
-#define BLINKYPROFILE_CHAR4_UUID            0xFFF4
+#define BLINKYPROFILE_ON_UUID            0xFFF1
   
 // Simple Keys Profile Services bit fields
 #define BLINKYPROFILE_SERVICE               0x00000001

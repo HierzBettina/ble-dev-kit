@@ -19,7 +19,7 @@
 
 #include "gattservapp.h"
 #include "peripheral.h"
-#include "simpleBLEPeripheral.h"
+#include "BlinkyPeripheral.h"
 
 /*********************************************************************
  * GLOBAL VARIABLES

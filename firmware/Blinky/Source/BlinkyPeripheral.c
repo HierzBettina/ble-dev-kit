@@ -21,7 +21,7 @@
 
 #include "gapbondmgr.h"
 
-#include "simpleBLEPeripheral.h"
+#include "BlinkyPeripheral.h"
 
 #if defined FEATURE_OAD
   #include "oad.h"
@@ -82,28 +82,15 @@ static gaprole_States_t gapProfileState = GAPROLE_INIT;
 static uint8 scanRspData[] =
 {
   // complete name
-  0x14,   // length of this data
+  0x06,   // length of this data
   GAP_ADTYPE_LOCAL_NAME_COMPLETE,
-  0x53,   // 'S'
-  0x69,   // 'i'
-  0x6d,   // 'm'
-  0x70,   // 'p'
-  0x6c,   // 'l'
-  0x65,   // 'e'
   0x42,   // 'B'
-  0x4c,   // 'L'
-  0x45,   // 'E'
-  0x50,   // 'P'
-  0x65,   // 'e'
-  0x72,   // 'r'
-  0x69,   // 'i'
-  0x70,   // 'p'
-  0x68,   // 'h'
-  0x65,   // 'e'
-  0x72,   // 'r'
-  0x61,   // 'a'
   0x6c,   // 'l'
-
+  0x69,   // 'i'
+  0x6e,   // 'n'
+  0x6b,   // 'k'
+  0x79,   // 'y'
+  
   // connection interval range
   0x05,   // length of this data
   GAP_ADTYPE_SLAVE_CONN_INTERVAL_RANGE,
@@ -267,18 +254,9 @@ void SimpleBLEPeripheral_Init( uint8 task_id )
   // Setup the BlinkyProfile Characteristic Values
   {
     uint8 charValue1 = 1;
-    uint8 charValue2 = 2;
-    uint8 charValue3 = 3;
-    uint8 charValue4 = 4;
-    BlinkyProfile_SetParameter( BLINKYPROFILE_CHAR1, sizeof ( uint8 ), &charValue1 );
-    BlinkyProfile_SetParameter( BLINKYPROFILE_CHAR2, sizeof ( uint8 ), &charValue2 );
-    BlinkyProfile_SetParameter( BLINKYPROFILE_CHAR3, sizeof ( uint8 ), &charValue3 );
-    BlinkyProfile_SetParameter( BLINKYPROFILE_CHAR4, sizeof ( uint8 ), &charValue4 );
+    BlinkyProfile_SetParameter( BLINKYPROFILE_ON, sizeof ( uint8 ), &charValue1 );
   }
-  {
-    DevInfo_SetParameter(DEVINFO_MANUFACTURER_NAME, 16, "Backyard Brains");
-    DevInfo_SetParameter( DEVINFO_SYSTEM_ID, 4, "YO" );
-  }
+
   // Register callback with SimpleGATTprofile
   VOID BlinkyProfile_RegisterAppCBs( &simpleBLEPeripheral_BlinkyProfileCBs );
 
@@ -398,7 +376,14 @@ static void peripheralStateNotificationCB( gaprole_States_t newState )
         systemId[5] = ownAddress[3];
 
         DevInfo_SetParameter(DEVINFO_SYSTEM_ID, DEVINFO_SYSTEM_ID_LEN, systemId);
-
+          {
+    DevInfo_SetParameter(DEVINFO_MANUFACTURER_NAME, 16, "Nick Walker");
+    DevInfo_SetParameter(DEVINFO_MODEL_NUMBER, 15, "BLE Dev Kit 1.0");
+    DevInfo_SetParameter(DEVINFO_FIRMWARE_REV, 3, "1.0");
+    DevInfo_SetParameter(DEVINFO_HARDWARE_REV, 3, "1.0");
+    DevInfo_SetParameter(DEVINFO_SOFTWARE_REV, 3, "1.0");
+    DevInfo_SetParameter(DEVINFO_SERIAL_NUMBER, 7, "NSW0001");
+  }
       }
       break;
 
@@ -465,20 +450,11 @@ static void blinkyProfileChangeCB( uint8 paramID )
 
   switch( paramID )
   {
-    case BLINKYPROFILE_CHAR1:
-      BlinkyProfile_GetParameter( BLINKYPROFILE_CHAR1, &newValue );
+    case BLINKYPROFILE_ON:
+      BlinkyProfile_GetParameter( BLINKYPROFILE_ON, &newValue );
 
       #if (defined HAL_LCD) && (HAL_LCD == TRUE)
         HalLcdWriteStringValue( "Char 1:", (uint16)(newValue), 10,  HAL_LCD_LINE_3 );
-      #endif // (defined HAL_LCD) && (HAL_LCD == TRUE)
-
-      break;
-
-    case BLINKYPROFILE_CHAR3:
-      BlinkyProfile_GetParameter( BLINKYPROFILE_CHAR3, &newValue );
-
-      #if (defined HAL_LCD) && (HAL_LCD == TRUE)
-        HalLcdWriteStringValue( "Char 3:", (uint16)(newValue), 10,  HAL_LCD_LINE_3 );
       #endif // (defined HAL_LCD) && (HAL_LCD == TRUE)
 
       break;
