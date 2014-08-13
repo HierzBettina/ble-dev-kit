@@ -21,14 +21,13 @@
 
 #include "gapbondmgr.h"
 
-#include "BlinkyPeripheral.h"
+#include "simpleBLEPeripheral.h"
 
 #if defined FEATURE_OAD
   #include "oad.h"
   #include "oad_target.h"
 #endif
 
-#include "HM-10.h"
 
 /*********************************************************************
  * CONSTANTS
@@ -83,7 +82,7 @@ static gaprole_States_t gapProfileState = GAPROLE_INIT;
 static uint8 scanRspData[] =
 {
   // complete name
-  0x07,   // length of this data
+  0x06,   // length of this data
   GAP_ADTYPE_LOCAL_NAME_COMPLETE,
   0x42,   // 'B'
   0x6c,   // 'l'
@@ -166,7 +165,7 @@ static blinkyProfileCBs_t simpleBLEPeripheral_BlinkyProfileCBs =
  */
 
 /*********************************************************************
- * @fn      BlinkyPeripheral_Init
+ * @fn      SimpleBLEPeripheral_Init
  *
  * @brief   Initialization function for the Simple BLE Peripheral App Task.
  *          This is called during initialization and should contain
@@ -179,7 +178,7 @@ static blinkyProfileCBs_t simpleBLEPeripheral_BlinkyProfileCBs =
  *
  * @return  none
  */
-void BlinkyPeripheral_Init( uint8 task_id )
+void SimpleBLEPeripheral_Init( uint8 task_id )
 {
   simpleBLEPeripheral_TaskID = task_id;
 
@@ -257,12 +256,7 @@ void BlinkyPeripheral_Init( uint8 task_id )
     uint8 charValue1 = 1;
     BlinkyProfile_SetParameter( BLINKYPROFILE_ON, sizeof ( uint8 ), &charValue1 );
   }
-    DevInfo_SetParameter(DEVINFO_MANUFACTURER_NAME, 16, "Nick Walker");
-    DevInfo_SetParameter(DEVINFO_MODEL_NUMBER, 16, "BLE Dev Kit 1.0");
-    DevInfo_SetParameter(DEVINFO_FIRMWARE_REV, 3, "1.0");
-    DevInfo_SetParameter(DEVINFO_HARDWARE_REV, 3, "1.0");
-    DevInfo_SetParameter(DEVINFO_SOFTWARE_REV, 3, "1.0");
-    DevInfo_SetParameter(DEVINFO_SERIAL_NUMBER, 7, "NSW0001");
+
   // Register callback with SimpleGATTprofile
   VOID BlinkyProfile_RegisterAppCBs( &simpleBLEPeripheral_BlinkyProfileCBs );
 
@@ -287,13 +281,13 @@ void BlinkyPeripheral_Init( uint8 task_id )
   
   P1DIR = 0xFF; // All port 1 pins (P1.0-P1.7) as output
   P2DIR = 0x1F; // All port 1 pins (P2.0-P2.4) as output
-
+  
   P0 = 0;
   P1 = 0;
   P2 = 0;
 }
 
-uint16 BlinkyPeripheral_ProcessEvent( uint8 task_id, uint16 events )
+uint16 SimpleBLEPeripheral_ProcessEvent( uint8 task_id, uint16 events )
 {
 
   VOID task_id; // OSAL required parameter that isn't used in this function
@@ -382,7 +376,14 @@ static void peripheralStateNotificationCB( gaprole_States_t newState )
         systemId[5] = ownAddress[3];
 
         DevInfo_SetParameter(DEVINFO_SYSTEM_ID, DEVINFO_SYSTEM_ID_LEN, systemId);
-
+          {
+    DevInfo_SetParameter(DEVINFO_MANUFACTURER_NAME, 16, "Nick Walker");
+    DevInfo_SetParameter(DEVINFO_MODEL_NUMBER, 15, "BLE Dev Kit 1.0");
+    DevInfo_SetParameter(DEVINFO_FIRMWARE_REV, 3, "1.0");
+    DevInfo_SetParameter(DEVINFO_HARDWARE_REV, 3, "1.0");
+    DevInfo_SetParameter(DEVINFO_SOFTWARE_REV, 3, "1.0");
+    DevInfo_SetParameter(DEVINFO_SERIAL_NUMBER, 7, "NSW0001");
+  }
       }
       break;
 
@@ -429,24 +430,19 @@ static void peripheralStateNotificationCB( gaprole_States_t newState )
 
   gapProfileState = newState;
 
-#if !defined( CC2540_MINIDK )
+
   VOID gapProfileState;     // added to prevent compiler warning with
                             // "CC2540 Slave" configurations
-#endif
+
 
 
 }
 
-static void performPeriodicTask( void ){
-  uint8 value;
-  BlinkyProfile_GetParameter( BLINKYPROFILE_ON, &value );
-  if(value != 0) {
-    PIN1 = !PIN1;
-  }
-  else{
-    PIN1 = 0;
-  }
+static void performPeriodicTask( void )
+{
+  P1 = P1 ^ 0x04;
 }
+
 
 static void blinkyProfileChangeCB( uint8 paramID )
 {

@@ -1,5 +1,5 @@
-#ifndef SIMPLEGATTPROFILE_H
-#define SIMPLEGATTPROFILE_H
+#ifndef BLINKYPROFILE_H
+#define BLINKYPROFILE_H
 
 #ifdef __cplusplus
 extern "C"

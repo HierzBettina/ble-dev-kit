@@ -29,8 +29,6 @@ int main(void)
   /* Initialize NV system */
   osal_snv_init();
 
-  /* Initialize LL */
-
   /* Initialize the operating system */
   osal_init_system();
 
