@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A388a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="mapper" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9a-c9-KHU">
+                                <rect key="frame" x="254" y="285" width="93" height="30"/>
+                                <state key="normal" title="Start Logging">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loggingButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gsB-jT-gUg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Node Two" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doD-UJ-16C">
+                                <rect key="frame" x="261" y="159" width="77.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Node One" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDZ-eC-O1L">
+                                <rect key="frame" x="260" y="131" width="78.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Node Three" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sp8-Ib-ROp">
+                                <rect key="frame" x="255" y="188" width="90" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vRr-aM-QSC">
+                                <rect key="frame" x="276" y="217" width="51" height="31"/>
+                                <connections>
+                                    <action selector="scanningSwitchFlipped:" destination="vXZ-lx-hvc" eventType="valueChanged" id="O4i-aL-spV"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scanning" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHu-a8-qnA">
+                                <rect key="frame" x="264" y="256" width="72" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="E9a-c9-KHU" firstAttribute="top" secondItem="xHu-a8-qnA" secondAttribute="bottom" constant="8.5" id="0g2-Ol-NiU"/>
+                            <constraint firstAttribute="centerX" secondItem="Sp8-Ib-ROp" secondAttribute="centerX" id="3Kd-pO-RpI"/>
+                            <constraint firstItem="iDZ-eC-O1L" firstAttribute="top" secondItem="E9a-c9-KHU" secondAttribute="bottom" constant="8" id="4C4-Aa-AsM"/>
+                            <constraint firstAttribute="centerX" secondItem="iDZ-eC-O1L" secondAttribute="centerX" id="9o5-aT-Aej"/>
+                            <constraint firstAttribute="centerX" secondItem="doD-UJ-16C" secondAttribute="centerX" id="FEv-uG-uxr"/>
+                            <constraint firstItem="Sp8-Ib-ROp" firstAttribute="top" secondItem="doD-UJ-16C" secondAttribute="bottom" constant="8" id="KUq-Rp-Fts"/>
+                            <constraint firstAttribute="centerY" secondItem="E9a-c9-KHU" secondAttribute="centerY" id="RSd-t9-kLq"/>
+                            <constraint firstItem="vRr-aM-QSC" firstAttribute="top" secondItem="Sp8-Ib-ROp" secondAttribute="bottom" constant="8.5" id="TJP-jh-p94"/>
+                            <constraint firstAttribute="centerX" secondItem="xHu-a8-qnA" secondAttribute="centerX" id="TYs-5f-7ny"/>
+                            <constraint firstItem="doD-UJ-16C" firstAttribute="top" secondItem="iDZ-eC-O1L" secondAttribute="bottom" constant="8" id="YOr-Tb-4qs"/>
+                            <constraint firstItem="xHu-a8-qnA" firstAttribute="top" secondItem="vRr-aM-QSC" secondAttribute="bottom" constant="8" id="YuW-tX-wND"/>
+                            <constraint firstAttribute="centerX" secondItem="Sp8-Ib-ROp" secondAttribute="centerX" id="gMa-UW-iMh"/>
+                            <constraint firstAttribute="centerX" secondItem="iDZ-eC-O1L" secondAttribute="centerX" id="iCB-dk-8Kv"/>
+                            <constraint firstAttribute="centerX" secondItem="doD-UJ-16C" secondAttribute="centerX" id="o93-pj-d8g"/>
+                            <constraint firstAttribute="centerX" secondItem="vRr-aM-QSC" secondAttribute="centerX" id="pPf-BN-qHh"/>
+                            <constraint firstAttribute="centerX" secondItem="E9a-c9-KHU" secondAttribute="centerX" constant="-0.5" id="uXl-Cp-HYb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4C4-Aa-AsM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="loggingButton" destination="E9a-c9-KHU" id="wq4-ef-dyD"/>
+                        <outlet property="nodeLabelOne" destination="iDZ-eC-O1L" id="0Fo-ke-bb0"/>
+                        <outlet property="nodeLabelThree" destination="Sp8-Ib-ROp" id="NVm-NG-sVQ"/>
+                        <outlet property="nodeLabelTwo" destination="doD-UJ-16C" id="a4B-RV-6GE"/>
+                        <outlet property="scanningSwitch" destination="vRr-aM-QSC" id="Y7X-a9-3dR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

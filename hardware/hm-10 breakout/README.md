@@ -7,9 +7,6 @@ HM-10 Breakout Board
 This is a slight modification of [Ladvien's board](https://github.com/Ladvien/HM-10). This version has more accurate pin notations and removes routes to unused pins on the HM-10, thereby shrinking the overall footprint of the board. 
 The HM-10's on board TI CC2541 is fully programmable with CC-Debugger or SmartRF04EB. See this repo's [wiki](https://github.com/nickswalker/HM-10-breakout-board/wiki) for more resources.
 
-### Who is This Board For?
-
-Two groups of people: Those wanting to make the HM-10 breadboard-friendly and those wanting a cheaper, more flexible alternative to TI's CC2541 dev kits.
 
 ## Bill of Materials
 
