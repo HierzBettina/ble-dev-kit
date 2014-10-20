@@ -1,8 +1,8 @@
 HM-10 Breakout Board
 ====================
 
-<img src="images/top.png" width="200px" title="Top" />
-<img src="images/bottom.png" width="200px" title="Bottom" />
+<img src="/images/top.png" width="200px" title="Top" />
+<img src="/images/bottom.png" width="200px" title="Bottom" />
 
 This is a slight modification of [Ladvien's board](https://github.com/Ladvien/HM-10). This version has more accurate pin notations and removes routes to unused pins on the HM-10, thereby shrinking the overall footprint of the board. 
 The HM-10's on board TI CC2541 is fully programmable with CC-Debugger or SmartRF04EB. See this repo's [wiki](https://github.com/nickswalker/HM-10-breakout-board/wiki) for more resources.
