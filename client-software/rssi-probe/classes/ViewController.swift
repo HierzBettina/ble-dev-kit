@@ -7,6 +7,7 @@ class ViewController: UIViewController, CBCentralManagerDelegate {
     @IBOutlet private var nodeLabelOne: UILabel?
     @IBOutlet private var nodeLabelTwo: UILabel?
     @IBOutlet private var nodeLabelThree: UILabel?
+    @IBOutlet private var maxLogCountLabel: UILabel?
     
     private let numberForUUID: [String: UInt8] = ["25FC9103-DFA9-2FC0-9E26-36739E77A391": 1,
                                                    "2F51A3B5-7657-D122-3960-B3DA5F55F912": 2,
@@ -18,6 +19,8 @@ class ViewController: UIViewController, CBCentralManagerDelegate {
     private var logging = false
     //Key is a device UUID, stores a tuple of the date and the RSSI
     private var log = Dictionary<String, [(date: NSDate, rssi: Int)]>()
+
+    private var scanningLog = Dictionary<String, [(date: NSDate, rssi: Int)]>()
     //Our central will only report data from devices broadcasting this service
     //in their advertising data
     private let permissibaleUUID =  CBUUID.UUIDWithString("FFE0")
@@ -77,14 +80,21 @@ class ViewController: UIViewController, CBCentralManagerDelegate {
         else{
             //Relabel the button
             sender.setTitle("Start logging", forState: nil)
+            logging = false
             println("Stopped logging.")
             promptToNameLogFile()
-            logging = false
+
         }
 
     }
     func updateLabel(uuid: String){
-        let average = getAverageOfLastTenEvents(uuid)
+        var average: Int?
+        if(logging){
+            average = getAverageOfLastTenEvents(log[uuid]!)
+        }
+        else if(scanning){
+            average = getAverageOfLastTenEvents(scanningLog[uuid]!)
+        }
         let peripheralNumber = numberForUUID[uuid]
         var labelForPeripheral: UILabel?
         if peripheralNumber != nil {
@@ -99,6 +109,11 @@ class ViewController: UIViewController, CBCentralManagerDelegate {
         if labelForPeripheral != nil {
             labelForPeripheral!.text = average!.description
         }
+        var max = 0;
+        for (uuid, events) in log {
+            max = (events.count > max) ? events.count : max
+        }
+        maxLogCountLabel!.text = max.description
     }
     func centralManager(central: CBCentralManager!, didDiscoverPeripheral peripheral: CBPeripheral!,
         advertisementData: [NSObject : AnyObject]!, RSSI: NSNumber!) {
@@ -112,21 +127,25 @@ class ViewController: UIViewController, CBCentralManagerDelegate {
         let uuid = peripheral.identifier.UUIDString
         let rssi = RSSI as Int
 
-        //If the log array doesn't exist for this device,
-        //make it.
-        if log[uuid]? == nil{
-            log[uuid] = []
-        }
-
         //See if the user wants us to log stuff
         if logging{
+            //If the log array doesn't exist for this device,
+            //make it.
+            if log[uuid]? == nil{
+                log[uuid] = []
+            }
             //Add an event
             log[uuid]!.append(date: timeStamp as NSDate, rssi: rssi)
         }
         else{
+            //If the log array doesn't exist for this device,
+            //make it.
+            if scanningLog[uuid]? == nil{
+                scanningLog[uuid] = []
+            }
             //We'll just keep 10 events at a time so we
             //can keep the meters updating.
-            logEventUpToTen(uuid, timeStamp: timeStamp, rssi: rssi)
+            addToScanningLog(uuid, timeStamp: timeStamp, rssi: rssi)
         }
 
         updateLabel(uuid)
@@ -140,21 +159,21 @@ class ViewController: UIViewController, CBCentralManagerDelegate {
     }
     //MARK: Logging
 
-    func logEventUpToTen(uuid: String, timeStamp: NSDate, rssi: Int){
-        let arrayForUUID = log[uuid]
+    func addToScanningLog(uuid: String, timeStamp: NSDate, rssi: Int){
+        let arrayForUUID = scanningLog[uuid]
 
         if arrayForUUID != nil{
             if arrayForUUID!.count == 10 {
                 //Rotate all data back one index
 
                 for var i = 0; i < 9; i++ {
-                    log[uuid]![i] = log[uuid]![i + 1]
+                    scanningLog[uuid]![i] = scanningLog[uuid]![i + 1]
                 }
-                log[uuid]![9] = (timeStamp,rssi)
+                scanningLog[uuid]![9] = (timeStamp,rssi)
             }
             //If we've got fewer than ten, just add our new event on
             else if arrayForUUID!.count < 10{
-                log[uuid]!.append(date: timeStamp, rssi: rssi)
+                scanningLog[uuid]!.append(date: timeStamp, rssi: rssi)
             }
             else{
                 println("method called with more than ten elements already in the log")
@@ -163,33 +182,27 @@ class ViewController: UIViewController, CBCentralManagerDelegate {
         }
     }
 
-    func getAverageOfLastTenEvents(uuid: String)->(Int8?){
-        var arrayForUUID = log[uuid]
-        //Make sure we've actually logged something for this ID
-        if arrayForUUID != nil{
-            if arrayForUUID!.count > 10 {
-                //...get the average of all the events
-                var totalOfLastTenMeasurements = 0
-                let lastIndex = arrayForUUID!.count - 1
+    func getAverageOfLastTenEvents(list: [(date: NSDate, rssi: Int)] )->(Int?){
+        if list.count > 10 {
+            //...get the average of all the events
+            var totalOfLastTenMeasurements = 0
+            let lastIndex = list.count - 1
 
-                for var i = 0; i < 10; i++ {
+            for var i = 0; i < 10; i++ {
 
-                    totalOfLastTenMeasurements += arrayForUUID![lastIndex - i].rssi
-                }
-                var average = totalOfLastTenMeasurements / 10
-                return Int8(average)
+                totalOfLastTenMeasurements += list[lastIndex - i].rssi
             }
-            //If we've got fewer than ten, just return one of them
-            else if arrayForUUID!.count > 0 {
-                return Int8(arrayForUUID!.last!.rssi)
-            }
-            else {
-                println("Uh oh, there's nothing in the array...")
-                return nil
-            }
+            var average = totalOfLastTenMeasurements / 10
+            return average
         }
-        return nil
-        
+        //If we've got fewer than ten, just return one of them
+        else if list.count > 0 {
+            return list.last!.rssi
+        }
+        else {
+            println("Uh oh, there's nothing in the array...")
+            return nil
+        }
     }
     func getDocumentsDirectory()->String{
         return NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)[0] as String
@@ -208,15 +221,30 @@ class ViewController: UIViewController, CBCentralManagerDelegate {
         return logString
     }
 
-    func logToStringWithoutTime()->(String){
-        let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = dateFormatString
-        var logString = ""
+    func logToCSVStringWithoutTime()->(String){
+        var rows: [String] = []
+
         for (uuid, events) in log {
-            logString += "\n \(uuid)";
-            for logEvent in events{
-                logString += ", \(logEvent.rssi)"
+            //Add the uuid as the column header
+            if 0 == rows.endIndex {
+                rows.append("\(uuid),")
             }
+            else{
+                rows[0] += "\(uuid),"
+            }
+            for var i = 0; i < events.count; i++ {
+                if i + 1 < rows.count {
+                    rows[i + 1] += "\(events[i].rssi.description),"
+                }
+                else{
+                    rows.append("\(events[i].rssi.description),")
+                }
+            }
+        }
+
+        var logString = ""
+        for row in rows {
+            logString += "\(row.substringToIndex(row.endIndex.predecessor()))\n"
         }
         return logString
     }
@@ -232,6 +260,10 @@ class ViewController: UIViewController, CBCentralManagerDelegate {
             let field = alert.textFields![0] as UITextField
             self.saveLogToFile(field.text)
         }))
+        alert.addAction(UIAlertAction(title: "Discard", style: .Destructive, handler:{ (alertAction:UIAlertAction!) in
+            let field = alert.textFields![0] as UITextField
+            self.clearLog()
+        }))
 
         self.presentViewController(alert, animated: true, completion: nil)
     }
@@ -239,19 +271,20 @@ class ViewController: UIViewController, CBCentralManagerDelegate {
     func saveLogToFile(name: String){
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = dateFormatString
-        let logString = logToStringWithoutTime()
+        let logString = logToCSVStringWithoutTime()
         println(logString)
         let documentsDirectory = getDocumentsDirectory()
         var fileName = dateFormatter.stringFromDate(NSDate.date())
-        fileName += name
-        fileName += ".txt"
+        fileName += " \(name).csv"
         let path = documentsDirectory.stringByAppendingPathComponent(fileName)
         println(path)
         logString.writeToFile(path, atomically: true, encoding: NSUTF8StringEncoding, error: nil)
         
+        clearLog()
+    }
+    func clearLog(){
         log = Dictionary<String, [(date: NSDate, rssi: Int)]>()
     }
-
 
 }
 

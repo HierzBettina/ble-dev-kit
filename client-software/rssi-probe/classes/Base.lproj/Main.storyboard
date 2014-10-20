@@ -7,7 +7,7 @@
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="mapper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="rssi_probe" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -26,19 +26,19 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Node Two" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doD-UJ-16C">
-                                <rect key="frame" x="261" y="159" width="77.5" height="20.5"/>
+                                <rect key="frame" x="261" y="159" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Node One" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDZ-eC-O1L">
-                                <rect key="frame" x="260" y="131" width="78.5" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Node One" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iDZ-eC-O1L">
+                                <rect key="frame" x="260" y="131" width="79" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Node Three" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sp8-Ib-ROp">
-                                <rect key="frame" x="255" y="188" width="90" height="20.5"/>
+                                <rect key="frame" x="255" y="188" width="90" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,7 +50,13 @@
                                 </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scanning" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHu-a8-qnA">
-                                <rect key="frame" x="264" y="256" width="72" height="20.5"/>
+                                <rect key="frame" x="264" y="256" width="72" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Log Count" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="82a-7D-T1r">
+                                <rect key="frame" x="240" y="559" width="119" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -68,11 +74,13 @@
                             <constraint firstItem="vRr-aM-QSC" firstAttribute="top" secondItem="Sp8-Ib-ROp" secondAttribute="bottom" constant="8.5" id="TJP-jh-p94"/>
                             <constraint firstAttribute="centerX" secondItem="xHu-a8-qnA" secondAttribute="centerX" id="TYs-5f-7ny"/>
                             <constraint firstItem="doD-UJ-16C" firstAttribute="top" secondItem="iDZ-eC-O1L" secondAttribute="bottom" constant="8" id="YOr-Tb-4qs"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="82a-7D-T1r" secondAttribute="bottom" constant="20" id="YUs-01-QJC"/>
                             <constraint firstItem="xHu-a8-qnA" firstAttribute="top" secondItem="vRr-aM-QSC" secondAttribute="bottom" constant="8" id="YuW-tX-wND"/>
                             <constraint firstAttribute="centerX" secondItem="Sp8-Ib-ROp" secondAttribute="centerX" id="gMa-UW-iMh"/>
                             <constraint firstAttribute="centerX" secondItem="iDZ-eC-O1L" secondAttribute="centerX" id="iCB-dk-8Kv"/>
                             <constraint firstAttribute="centerX" secondItem="doD-UJ-16C" secondAttribute="centerX" id="o93-pj-d8g"/>
                             <constraint firstAttribute="centerX" secondItem="vRr-aM-QSC" secondAttribute="centerX" id="pPf-BN-qHh"/>
+                            <constraint firstAttribute="centerX" secondItem="82a-7D-T1r" secondAttribute="centerX" id="tbE-hA-avl"/>
                             <constraint firstAttribute="centerX" secondItem="E9a-c9-KHU" secondAttribute="centerX" constant="-0.5" id="uXl-Cp-HYb"/>
                         </constraints>
                         <variation key="default">
@@ -83,6 +91,7 @@
                     </view>
                     <connections>
                         <outlet property="loggingButton" destination="E9a-c9-KHU" id="wq4-ef-dyD"/>
+                        <outlet property="maxLogCountLabel" destination="82a-7D-T1r" id="ZS3-Rt-r1u"/>
                         <outlet property="nodeLabelOne" destination="iDZ-eC-O1L" id="0Fo-ke-bb0"/>
                         <outlet property="nodeLabelThree" destination="Sp8-Ib-ROp" id="NVm-NG-sVQ"/>
                         <outlet property="nodeLabelTwo" destination="doD-UJ-16C" id="a4B-RV-6GE"/>
