@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>rssi-probe.xcscheme</key>
+		<key>rssiprobe.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,6 +12,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>D423FA9D1A50D2E000AA51FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>D4A36A7919DBB38D00648691</key>
 		<dict>
 			<key>primary</key>
