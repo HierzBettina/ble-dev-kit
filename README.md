@@ -1,4 +1,4 @@
-*Note*: I have ceased working on projects with the HM-10 and the CC2541. The difficulties of dealing with the IAR toolchain are too great. I now recommend [ARM mbed solutions](https://developer.mbed.org/platforms/Nordic-nRF51822/) if you intend to pursue developing a BLE peripheral.
+*Note*: I have ceased working on projects with the HM-10 and the CC2541. The difficulties of dealing with the IAR toolchain are too great. I now recommend [ARM mbed solutions](https://developer.mbed.org/platforms/Nordic-nRF51822/) if you intend to pursue developing a BLE peripheral. I am leaving the resources I was able to gather online in case someone has use for them, but I cannot provide support.
 
 BLE Dev Kit
 ====
